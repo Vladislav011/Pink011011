@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+    <title>Competition011</title>
+  </head>
+  <body>
+    <header class="page-header">
+  <div class="page-header__wrapper page-header--nojs">
+    <div class="page-header__wrapper-border">
+  <div class="page-header__wrapper-image">
+  <img class="page-header__logo-image" src="css/img/logo-white-mobile.svg" width="75" height="22" alt="Пинк">
+  <button class="page-header__button page-header__button--closed" type="button">
+    <p class="visually-hidden">Открыть меню</p>
+  </button>
+  </div>
+  </div>
+  <nav class="main-nav main-nav--opened main-nav--nojs">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item site-list__item-active">
+          <a class="site-list__link" >Конкурс</a>
+        </li>
+        <li class="site-list__iteml">
+          <a class="site-list__link" href="https://www.instagram.com/vladeee11/">Vladeee11</a>
+        </li>
+      </ul>
+  </nav>
+  <div class="text">
+    <div class="text__wrapper">
+  <h1 class="text-title">Конкурс на самое безбашенное путешествие с Pink</h1>
+  </div>
+  </div>
+  </header>
+    <main class="content">
+      <div class="content-wrapper">
+       <section class="photo">
+        <div class="photo-title">
+          <p>Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!Пожалуйста заполните форму ниже:</p>
+        </div>
+      </section>
+      <form class="form" method="post" action="echo">
+        <fieldset class="form-info">
+          <ul class="form-info__list">
+            <li class="form-info__list-item">
+            <label class="label label-word" for="surname">Фамилия:</label>
+            <input class="text" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+            </li>
+            <li class="form-info__list-item">
+            <label class="label label-word" for="name">Имя:</label>
+            <input class="text" type="text" name="surname" id="surname" placeholder="Введите ваше имя">
+            </li>
+            <li class="form-info__list-item">
+            <label class="label label-word" for="middle-name">Отчество:</label>
+            <input class="text" type="text" name="surname" id="surname" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-info__app">
+          <legend class="form-info__legend">С каким приложением путешевствовали?</legend>
+          <ul class="form-info__list">
+            <li class="form-info__list-item">
+              <input class="radio" type="radio" name="trip-app" id="ios" value="ios" checked>
+                <label class="label label--radio" for="ios">Pink для iOS</label>
+            </li>
+            <li class="form-info__list-item">
+              <input class="radio" type="radio" name="trip-app" id="android" value="android">
+                <label class="label label--radio" for="android">Pink для Android</label>
+            </li>
+            <li class="form-info__list-item">
+              <input class="radio" type="radio" name="trip-app" id="windows" value="windows">
+                <label class="label label--radio" for="windows">Pink для Windows</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-info__contact">
+          <legend class="form-info__contact__legend">Контактная информация</legend>
+           <ul class="form-info__list">
+            <li class="form-info__list-item">
+               <label class="label label--tel">Номер телефона</label>
+               <input class="tel" type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+            </li>
+            <li class="form-info__list-item">
+              <label class="label label--email" for="email">Адрес почты</label>
+              <input class="tel" type="tel" name="email" id="email" placeholder="Введите почту">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-info__achivments">
+          <legend class="form-info__achivments__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="form-info__list">
+          <li class="form-info__list-item">
+            <input type="checkbox" name="selfie" id="selfie" checked>
+            <label class="label label-action" for="selfie">Сделал сэлфи с акулой</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="fire" id="fire" checked>
+            <label class="label label-action" for="fife">Обгорел на пляже</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="noris" id="noris">
+            <label class="label label-action" for="noris">Видел Чака Норриса</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="buy" id="buy">
+            <label class="label label-action" for="buy">Накупил сувениров</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="town" id="town" checked>
+            <label class="label label-action" for="town">Удержал башню</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="boom" id="boom">
+            <label class="label label-action" for="boom">Разгромил отель</label>
+          </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-textarea">
+          <legend class="form-textarea__legend">Опишите свои эмоции</legend>
+           <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="form-btn">
+          <button class="form-btn-sent">Отправить форму</button>
+          <div class="form-btn-required">
+          * — обязательные поля для заполнения
+          </div>>
+        </div>
+      </form>
+    </div>
+    </main>
+    <footer class="main-footer">
+    	<div class="footer-logo">
+         <img class="footer-img" src="css/img/logo-blue-tablet.svg" width="150px" alt="logo"><a href="index.html"></a>
+
+        </div>
+        <div class="footer-social">
+          <a class="  footer-social__tw" href="https://twitter.com/">Twitter<a>
+          <a class="  footer-social__fb" href="https://www.facebook.com/">Facebook<a>
+          <a class="  footer-social__yt" href="http://www.youtube.com/">YouTube<a>
+        </div>
+        <div class="footer-discribe">
+        	<a href="https://www.instagram.com/vladeee11/"> Vladeee11</a>
+        </div>
+    </footer>
+
+  </body>
+</html>

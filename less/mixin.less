@@ -1,0 +1,17 @@
+.no-outline(){
+  outline: none;
+  background: transparent;
+.no-outline::befor{
+  display: none;
+}
+}
+.container(){
+  width: 320px;
+  margin: 0 auto;
+  @media @tablet-widths{
+    width: 620px;
+  }
+  @media @desktop-widths{
+    width: 940px;
+  }
+}
