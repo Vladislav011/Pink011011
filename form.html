@@ -45,8 +45,8 @@
   </header>
     <main class="content">
       <div class="content-wrapper">
-       <section class="photo">
-        <div class="photo-title">
+       <section class="form-text">
+        <div class="form-title">
           <p>Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!Пожалуйста заполните форму ниже:</p>
         </div>
       </section>
@@ -59,15 +59,15 @@
             </li>
             <li class="form-info__list-item">
             <label class="label label-word" for="name">Имя:</label>
-            <input class="text" type="text" name="surname" id="surname" placeholder="Введите ваше имя">
+            <input class="text" type="text" name="surname" id="name" placeholder="Введите ваше имя">
             </li>
             <li class="form-info__list-item">
             <label class="label label-word" for="middle-name">Отчество:</label>
-            <input class="text" type="text" name="surname" id="surname" placeholder="Ну и отчество тоже">
+            <input class="text" type="text" name="surname" id="name2" placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-info__app">
+        <fieldset class="form-info__app2">
           <legend class="form-info__legend">С каким приложением путешевствовали?</legend>
           <ul class="form-info__list">
             <li class="form-info__list-item">
@@ -81,19 +81,6 @@
             <li class="form-info__list-item">
               <input class="radio" type="radio" name="trip-app" id="windows" value="windows">
                 <label class="label label--radio" for="windows">Pink для Windows</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-info__contact">
-          <legend class="form-info__contact__legend">Контактная информация</legend>
-           <ul class="form-info__list">
-            <li class="form-info__list-item">
-               <label class="label label--tel">Номер телефона</label>
-               <input class="tel" type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
-            </li>
-            <li class="form-info__list-item">
-              <label class="label label--email" for="email">Адрес почты</label>
-              <input class="tel" type="tel" name="email" id="email" placeholder="Введите почту">
             </li>
           </ul>
         </fieldset>
@@ -126,6 +113,68 @@
           </li>
           </ul>
         </fieldset>
+        <fieldset class="form-info__contact">
+          <legend class="form-info__contact__legend">Контактная информация</legend>
+           <ul class="form-info__list">
+            <li class="form-info__list-item1">
+               <label class="label label--tel">Номер телефона</label>
+               <input class="tel" type="tel" name="phone-number" id="phone-number" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+               <label class="label label--tel2">Номер телефона</label>
+            </li>
+            <li class="form-info__list-item2">
+              <label class="label label--email" for="email">Адрес почты</label>
+              <input class="tel" type="tel" name="email" id="email" placeholder="Введите почту">
+              <label class="label label--email2" for="email">Адрес почты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-info__app">
+          <legend class="form-info__legend">С каким приложением путешевствовали?</legend>
+          <ul class="form-info__list">
+            <li class="form-info__list-item">
+              <input class="radio" type="radio" name="trip-app" id="ios" value="ios" checked>
+                <label class="label label--radio" for="ios">Pink для iOS</label>
+            </li>
+            <li class="form-info__list-item">
+              <input class="radio" type="radio" name="trip-app" id="android" value="android">
+                <label class="label label--radio" for="android">Pink для Android</label>
+            </li>
+            <li class="form-info__list-item">
+              <input class="radio" type="radio" name="trip-app" id="windows" value="windows">
+                <label class="label label--radio" for="windows">Pink для Windows</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-info__achivments2">
+          <legend class="form-info__achivments__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="form-info__list">
+          <li class="form-info__list-item">
+            <input type="checkbox" name="selfie" id="selfie" checked>
+            <label class="label label-action" for="selfie">Сделал сэлфи с акулой</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="fire" id="fire" checked>
+            <label class="label label-action" for="fife">Обгорел на пляже</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="noris" id="noris">
+            <label class="label label-action" for="noris">Видел Чака Норриса</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="buy" id="buy">
+            <label class="label label-action" for="buy">Накупил сувениров</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="town" id="town" checked>
+            <label class="label label-action" for="town">Удержал башню</label>
+          </li>
+          <li class="form-info__list-item">
+            <input type="checkbox" name="boom" id="boom">
+            <label class="label label-action" for="boom">Разгромил отель</label>
+          </li>
+          </ul>
+        </fieldset>
+
         <fieldset class="form-textarea">
           <legend class="form-textarea__legend">Опишите свои эмоции</legend>
            <textarea class="textarea-text" name="feedback-emotion" id="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -133,8 +182,8 @@
         <div class="form-btn">
           <button class="form-btn-sent">Отправить форму</button>
           <div class="form-btn-required">
-          * — обязательные поля для заполнения
-          </div>>
+          * — обязательные поля
+          </div>
         </div>
       </form>
     </div>
