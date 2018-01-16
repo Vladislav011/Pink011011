@@ -1,19 +1,58 @@
 .photo-first{
   min-height: 331px;
 width: 100%;
+margin-bottom:  15px;
 
 }
 .photo-main__item{
-
-width: 44%;
-height: 35px;
-
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  width: 140px;
+  height: 30px;
   background-color: #d22856;
   text-align: center;
   padding-top: 5px;
-
-  text-decoration-color: white;
+  position: relative;
+  top:35px;
+  left: 160px;
 }
+.photo-wrapper{
+  height: 2586px;
+}
+.photo-main__title{
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.photo-main__content{
+  margin-top: 0;
+  min-height: 105px;
+  font-size: 14px;
+  line-height: 24px;
+
+}
+.photo-main__counter-like-desk{
+  display: none;
+}
+.time{
+  font-size: 12px;
+  line-height: 24px;
+  color: #71777f;
+  font-weight: 100;
+}
+.heart{
+  padding-top: 10px;
+  float: left;
+  height: 15px;
+}
+.photo-main__counter-like{
+  margin-left: 19px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #e3a6b3;
+}
+
 
 .photo-main1,
 .photo-main2,
@@ -23,20 +62,26 @@ height: 35px;
 .photo-main6{
   width: 88%;
   max-width: 280px;
-  min-height: 331px;
-  margin:0 auto;
-}
 
+  margin:0 auto;
+  margin-bottom:  15px;
+}
+.heart-desk{
+  display: none;
+}
 .photo-main__discribe1{
-  width: 88%;
-  padding-left: 5%;
-margin: 0 auto;
+  width: 280px;
 display: block;
+margin: 0 auto;
   max-width: 320px;
+  background: #f2f2f2;
+  padding: 25px 17px;
 }
 .photo-main__discribe{
-  width: 88%;
-  padding:0 5%;
+  max-width: 280px;
+
+  padding: 25px 17px;
+  background: #f2f2f2;
 
 }
 .photo-main-tablet{
@@ -58,66 +103,134 @@ display: block;
   display: none;
 }
 .words{
-  width: 88%;
-  padding: 50px 5%;
+  width: 280px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 100;
   text-align: center;
 }
-@media @tablet-widths {
+.photo-main__footer-desk{
+  display: none;
+}
+.photo-load__form{
+  max-width: 940px;
+  margin: 0 auto;
+}
 
+@media @tablet-widths {
+  .photo-main__item{
+    width: 134px;
+    top:98px;
+    left: 570px;
+  }
+  .photo-main1,
+  .photo-main2,
+  .photo-main3,
+  .photo-main4,
+  .photo-main5,
+  .photo-main6{
+
+    margin-bottom:  55px;
+  }
+  .photo-first{
+    min-height: 331px;
+  width: 100%;
+
+  margin-bottom:  15px;
+
+  }
+  .photo-wrapper{
+    height: 1500px;
+  }
   .photo-main__discribe1{
-    padding-left: 5%;
-    width: 81%;
+padding: 25px 29px;
+    width: 620px;
     margin: 0 auto;
     display: block;
     max-width: 620px;
 
   }
+  .photo-main__content-first{
+    max-width: 530px;
+    height: 40px;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .photo-main__counter-like{
+    margin-right: 15px;
+  }
+  .photo-main__footer-first{
+    display: none;
+
+  }
+  .photo-main__title{
+    width: 448px;
+    margin: 0;
+    float: left;
+  }
+  .photo-main__footer-desk{
+    display: block;
+    float: left;
+    padding-left: 40px;
+  }
+  .photo-main__counter-like{
+    margin-left: 0;
+  }
+
+  .heart-desk{
+    display: block;
+    float: right;
+    height: 15px;
+    margin-top: 10px;
+  }
+  .heart{
+    display: none;
+  }
+  .photo-main__discribe{
+    max-width: 300px;
+
+    padding: 25px 29px;
+    background: #f2f2f2;
+
+  }
   .photo-first {
     width: 100%;
 }
-.photo-main__wrapper{
+.content{
   min-height: 1500px;
   max-width: 620px;
   margin: 0 auto;
 }
-  .photo-main__item{
-  width: 18%;
-  height: 35px;
-    background-color: #d22856;
-    text-align: center;
-    padding-top: 5px;
-    text-decoration-color: white;
-  }
+
   .photo-main1,
   .photo-main3,
   .photo-main5{
-    width: 48%;
-    min-height: 560px;
+    width: 300px;
+    height: 455px;
     float: left;
     max-width: 300px;
   }
   .photo-main2,
   .photo-main4,
   .photo-main6{
-      width: 48%;
-    min-height: 560px;
+      width: 300px;
+    height: 455px;
     float: right;
-    margin-left: 3.2%;
+    margin-left: 20px;
     max-width: 300px;
 
 
   }
-  .photo-main__discribe{
-      width: 100%;
-    padding:0 3%;
-    min-height: 160px;
-  }
+
   .photo-main-tablet{
     display: block;
   }
   .photo-main-mobile{
     display: none;
   }
+
   .photo-tablet{
 
     display: block;
@@ -128,22 +241,65 @@ display: block;
   }
   .words{
     width:81%;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+    text-align: center;
     margin: 0 auto;
     padding: 75px 0px;
+
     text-align: center;
   }
 }
 @media @desktop-widths {
+  .photo-main__item{
+    width: 140px;
+    top:120px;
+    left: 1060px;
+  }
+  .photo-wrapper{
+    height: 1286px;
+  }
+  .words{
+    padding: 0;
+  }
 
-  .photo-main__discribe1{
-  padding-left: 3%;
-    display: block;
-    width: 78%;
+  .photo-main1,
+  .photo-main2,
+  .photo-main3,
+  .photo-main4,
+  .photo-main5,
+  .photo-main6{
+
+    margin-bottom:  55px;
+  }
+  .content{
+    min-height: 1500px;
     max-width: 940px;
     margin: 0 auto;
+  }
+  .photo-first{
+
+  width: 100%;
+  margin-bottom:  15px;
 
   }
-  .photo-main__wrapper{
+
+  .photo-main__discribe1{
+
+    display: block;
+    width: 100%;
+    max-width: 940px;
+
+
+  }.photo-main__content-first{
+    max-width: 930px;
+
+  }
+  .photo-main__title{
+    width: 748px;
+  }
+  .content-wrapper{
     min-height: 1170px;
     max-width: 940px;
     margin: 0 auto;
@@ -152,34 +308,26 @@ display: block;
     width: 100%;
 }
 .photo-title{
-  
+
 }
-  .photo-main__item{
-  width: 12%;
-  height: 35px;
-    background-color: #d22856;
-    text-align: center;
-    padding-top: 5px;
-    text-decoration-color: white;
-  }
   .photo-main1,
   .photo-main2,
   .photo-main5,
   .photo-main4{
-    width: 31.9%;
-    min-height: 455px;
+    width: 300px;
+    min-height: 559px;
     float: left;
   }
   .photo-main3,
   .photo-main6{
-    width: 31.9%;
-    min-height: 455px;
+    width: 300px;
+    min-height: 559px;
     float: right;
     margin-left: 0;
   }
   .photo-main2,
   .photo-main5{
-    margin-left:2%;
+    margin-left:19px;
 
   }
   .photo-main4,
@@ -187,9 +335,11 @@ display: block;
     margin-left: 0;
   }
   .photo-main__discribe{
-    width: 100%;
-    padding:0 2%;
-    min-height: 160px;
+    max-width: 300px;
+
+    padding: 25px 29px;
+    background: #f2f2f2;
+
   }
   .photo-main-tablet{
     display: none;
