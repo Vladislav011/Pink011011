@@ -19,6 +19,7 @@ background: url("img/background-mobile@2x.jpg") no-repeat;
 }
 .menu{
   height: 440px;
+  display: none;
 }
 .page-header__wrapper{
 
@@ -76,6 +77,9 @@ background-color: rgba(31,40,51,0.35);
 background-color: rgba(31,40,51,0);
 border: 0 none;
   padding-left: 5%;
+}
+.platforms{
+  background: rgb(37,43,52);
 }
 .platforms__description{
   width: 72%;
@@ -145,6 +149,8 @@ padding-top: 93px;
   text-decoration: none;
 }
 .platforms__wrapper{
+  width: 320px;
+  margin: 0 auto;
   height: 275px;
   background-color: rgb(37,43,52);
 }
@@ -162,8 +168,9 @@ padding-top: 30px;
   height: 395px;
 }
 .app__image-mobile{
-  position: absolute;
-  top:622px;
+  position: relative;
+  top:111px;
+
 
 }
 .main-nav-desktop{
@@ -187,16 +194,26 @@ padding-top: 30px;
   height: auto;
 }
 @media @tablet-widths {
+  .platforms__wrapper{
+    width: 300px;
+    margin-left: 40px;
+    height: 405px;
+  }
+  .platforms{
+    background: transparent;
+  }
   .menu{
     height: 440px;
   }
   .iphone-han{
     margin-bottom: 0;
     width: 60%;
-    position: absolute;
-    height: 351px;
-    top: 818px;
-    left:24.2%;
+    height: 395px;
+}
+.app__image-tablet{
+  position: relative;
+  top:157px;
+left:99px;
 }
 .platforms__list{
  padding-left: 11%;
@@ -272,10 +289,10 @@ padding-top: 30px;
   .platforms__wrapper{
     position: relative;
     width:50%;
-    float: left;
     height: 415px;
     background-color: transparent;
     z-index: 5;
+    top:-341px;
 
   }
   .app{
@@ -287,26 +304,27 @@ margin-top: 140px;
 
 }
 @media (min-width:770px){
-
+  .app__image-tablet{
+    top:157px;
+  left:99px;
+  }
   .iphone-han{
     margin-bottom: 0;
     width: 60%;
-    position: absolute;
-    height: 351px;
-    top: 816px;
-    left:24.2%;
+    height: 395px;
+
 }
 
 }
 @media (min-width:780px){
-
+  .app__image-tablet{
+    top:157px;
+  left:99px;
+  }
   .iphone-han{
     margin-bottom: 0;
     width: 60%;
-    position: absolute;
-    height: 351px;
-    top: 810px;
-    left:24.2%;
+    height: 395px;
 }
 
 }
@@ -338,14 +356,10 @@ margin-top: 140px;
   }
 
   .page-header {
-    position: absolute;
-    top: 0;
 width: 100%;
   background: url("img/background-fullsize.jpg");
   }
   .page-header2 {
-    position: absolute;
-    top: 0;
     width: 100%;
   background: url("img/background-fullsize.jpg");
   }
@@ -423,6 +437,7 @@ width: 100%;
     }
     .platforms__wrapper{
       margin-top:130px;
+      top:0;
     }
     .platforms__description{
       font-size: 18px;
@@ -494,15 +509,13 @@ width: 100%;
 .site-list__link-desk{
   color: white;
 }
-    .site-list__iteml{
-
-    }
     .app__image-tablet{
       float:right;
       display: none;
     }
     .app__image-desktop{
       display:block;
+      width: 550px;
       float:right;
     }
     .app__image-mobile{

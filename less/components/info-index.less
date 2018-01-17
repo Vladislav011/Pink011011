@@ -1,10 +1,16 @@
 .info{
-  margin-top: 80px;
   margin: 0 auto;
+  clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
+      background: #f2f2f2;
+      padding-top: 60px;
+
 
 }
 .info-wrapper{
-  width: 100%;
+
+    background: #f2f2f2;
+  width: 76%;
+  margin: 0 auto;
 }
 .img-info1{
   display: none;
@@ -18,9 +24,24 @@
 .img-info5{
   display: none;
 }
+.info-item{
+
+}
 .img-info4{
+
+  width: 263px;
+
   display: block;
   margin:0 auto;
+}
+.img-4{
+
+background: #f2f2f2;
+width: 100%;
+
+display: block;
+margin:0 auto;
+margin-top: 47px;
 }
 .info-item__third{
   margin: 0 auto;
@@ -33,23 +54,43 @@
   margin: 0 auto;
 }
 .info-item__title{
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 800;
   text-align: center;
 }
 .info-item__describe{
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 100;
   text-align: center;
 }
 @media @tablet-widths{
   .info{
     width: 100%;
     margin-top: 50px;
-    min-height: 490px;
+    height: 485px;
+    padding-top: 0px;
+      clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
+
 
   }
+
+  .img-4{
+    display: none;
+  }
   .info-wrapper{
+    width: 310px;
+    margin-left: 45.5%;
     padding-top: 60px;
     padding-bottom: 50px;
   }
   .img-info5{
+    position: absolute;
+    z-index: 5;
+    height: 485px;
+    left:40px;
+    top:960px;
     display: block;
     float: left;
   }
@@ -57,6 +98,13 @@
   .img-info4{
     display: none;
     margin:0 auto;
+  }.info-item__title{
+    font-size: 14px;
+    text-align: left;
+  }
+  .info-item__describe{
+    font-size: 14px;
+    text-align: left;
   }
 
 
@@ -66,6 +114,7 @@
       width: 100%;
     margin-top: 50px;
     min-height: 560px;
+    clip-path: polygon(0 93px, 100% 0, 100% 100%, 0 100%);
   }
   .img-info1{
     display: block;
@@ -86,17 +135,45 @@
     display: none;
   }
   .info-item__third{
-    width:27%;
+    width:244px;
     float: right;
+    position: absolute;
+    top:1030px;
+    left:67%;
+    margin-right: 190px;
   }
 
   .info-item__first{
 float: left;
-    width:27%;
+position: absolute;
+top:1030px;
+left:15.8%;
+    width:244px;
+
   }
   .info-item__second{
-  width:27%;
+  width:244px;
   float: left;
-  margin-left: 9%;
+  position: absolute;
+  top:1030px;
+  left:42%;
+
+  }
+  .info-item__title{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .info-item__describe{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .info-wrapper{
+    width: 100%;
+    margin-left:0;
+    height: 560px;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 }
