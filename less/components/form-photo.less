@@ -1,8 +1,26 @@
 .photo-load__form{
   width: 100%;
   background: #f2f2f2;
-}
+} 
+.crop-photo{
 
+  opacity: 0.3;
+}
+.crop-photo:hover{
+  opacity: 0.7;
+}
+.fill-photo{
+  opacity: 0.3;
+}
+.fill-photo:hover{
+  opacity: 0.7;
+}
+.contrast-photo{
+  opacity: 0.3;
+}
+.contrast-photo:hover{
+  opacity: 0.7;
+}
 
 .photo-load__form-wrapper{
   width: 320px;
@@ -20,6 +38,7 @@
   padding-left: 20px;
 }
 .photo-load__form__btn--submit{
+  outline: none;
   color:#d22856;
   height: 56px;
   width: 275px;
@@ -30,7 +49,16 @@
   line-height: 18px;
   font-weight: 600;
 }
+.photo-load__form__btn--submit:hover{
+ color: white;
+  background: #d22856;
+}
+.photo-load__form__btn--submit:active{
+color: #e07e94;
+background: #d22856;
+}
 .photo-load__form__btn--resert{
+  outline: none;
 margin-top: 15px;
   color:#dddfe0;
   height: 56px;
@@ -42,6 +70,15 @@ margin-top: 15px;
   line-height: 18px;
   font-weight: 600;
 
+}
+.photo-load__form__btn--resert:hover{
+
+  border: 3px solid #b5b9be;
+}
+.photo-load__form__btn--resert:active{
+
+  background: #b5b9be;
+  color: #cdcfd3;
 }
 .photo-load__tools-list{
   height: 72px;
@@ -81,6 +118,9 @@ left: 200px;
 
 background:#f2f2f2;
   z-index: 10;
+}
+.controls__toggle--contrast1:active{
+  background: #d22856;
 }
 @media @tablet-widths{
   .controls__scale1{
@@ -156,6 +196,7 @@ background:#f2f2f2;
     padding-bottom: 13px;
     margin-right:  0;
   }
+
   .photo-load__tools{
     border-bottom: none;
     height: 286px;
@@ -189,6 +230,13 @@ left:17px;
   background:#f2f2f2;
     z-index: 10;
   }
+  .controls__toggle--crop:active{
+    background: #d22856;
+  }
+  .controls__toggle--fill:active{
+    background: #d22856;
+  }
+
 
 
 }

@@ -7,8 +7,8 @@
     <title>Competition011</title>
   </head>
   <body>
-    <div class="menu">
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <div class="menu menu-closed menu-no-js">
+    <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="site-list__item-li">
         <img class="page-header__logo-image-li" src="css/img/logo-white-mobile.svg" width="75" height="22" alt="Пинк">
@@ -56,7 +56,7 @@
             <a class="site-list__link-desk" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item-desk">
-            <a class="site-list__link-desk" >Конкурс</a>
+            <a class=" site-list__link-desk-active" >Конкурс</a>
           </li>
           <li class="site-list__iteml-desk">
             <a class="site-list__link-desk" href="https://www.instagram.com/vladeee11/">Vladeee11</a>
@@ -294,6 +294,38 @@
         	<a  class="vlad" href="https://www.instagram.com/vladeee11/"> Vladeee11</a>
         </div>
     </footer>
+    <script>
+    var Menu=document.querySelector('.menu');
+    var btn=document.querySelector('.page-header__button');
+    var btncls=document.querySelector('.site-list__link-close');
+     Menu.classList.remove('menu-no-js');
 
+     btn.addEventListener('click',function(){
+     if (Menu.classList.contains('menu-closed')){
+       Menu.classList.remove('menu-closed');
+       Menu.classList.add('menu');
+
+     }else{
+       Menu.classList.add('menu-closed');
+       Menu.classList.remove('menu');
+     }
+
+
+
+    });
+    btncls.addEventListener('click',function(){
+    if (Menu.classList.contains('menu')){
+      Menu.classList.remove('menu');
+      Menu.classList.add('menu-closed');
+
+    }else{
+      Menu.classList.add('menu-closed');
+      Menu.classList.remove('menu');
+    }
+
+
+
+    });
+    </script>
   </body>
 </html>

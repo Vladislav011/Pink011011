@@ -8,8 +8,8 @@
 
   </head>
   <body>
-    <div class="menu">
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <div class="menu menu-closed menu-no-js">
+    <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="site-list__item-li">
         <img class="page-header__logo-image-li" src="css/img/logo-white-mobile.svg" width="75" height="22" alt="Пинк">
@@ -38,7 +38,7 @@
     <div class="page-header__wrapper-border">
   <div class="page-header__wrapper-image">
   <img class="page-header__logo-image-mobile" src="css/img/logo-white-mobile.svg" width="75" height="22" alt="Пинк">
-  <button class="page-header__button page-header__button--closed" type="button">
+  <button class="page-header__button page-header__button--opened" type="button">
   <img class="page-header__logo-image-mobile" src="css/img/icon-menu-burger.svg" width="49.945" height="24.007">
   </button>
   </div>
@@ -51,7 +51,7 @@
             <img class="page-header__logo-image-desktop" src="css/img/logo-blue-desktop.svg" width="150px" height="46px" alt="Пинк">
         </li>
         <li class="site-list__item-desk">
-          <a class="site-list__link-desk">Главная</a>
+          <a class=" site-list__link-desk-active">Главная</a>
         </li>
         <li class="site-list__item-desk">
           <a class="site-list__link-desk" href="photo.html">Фотографии</a>
@@ -136,31 +136,100 @@
 
 
     </section>
-    <section class="review slider" id="reviews">
-      <div class="review__inner-wrap">
-        <article class="review__item slider__slide slider__slide--active">
-          <p class="review__header">Николай Петров</p>
-          <p class=" review__description">25 лет, водитель трамвая</p>
-          <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-        </article>
-        <article class="review__item slider__slide">
-          <p class="review__header">Петр Васечкин</p>
-          <p class="review__description">25 лет, водитель трамвая</p>
-          <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-        </article>
-        <article class="review__item slider__slide">
-          <p class="review__header">Василий Николаев</p>
-          <p class="review__description">25 лет, водитель трамвая</p>
-          <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-        </article>
-      </div>
-      <span class="slider__review-toggle slider__review-toggle--prev"></span>
-      <span class="slider__review-toggle slider__review-toggle--next"></span>
-      <div class="slider__toggle"></div>
-    </section>
+    <div class="slider">
+
+<input  type="radio" id="btn-1" name="toggle" checked>
+<input type="radio" id="btn-2" name="toggle">
+<input type="radio" id="btn-3" name="toggle">
+<div class="slider-controls">
+ <label class="slider-btn-1"for="btn-1"></label>
+ <label class="slider-btn-2" for="btn-2"></label>
+ <label class="slider-btn-3" for="btn-3"></label>
+</div>
+<div class="slider-controls2">
+
+</div>
+<div class="slider-img"><img src="css/img/quotes.svg"></div>
+<div class="slides" id="slider">
+  <div class="slide">
+    <div class="slide-text">
+      <div class="slide-title">Николай Васильев</div>
+      <div class="slide-title-second">25 лет программист</div>
+      <p class="slide-p">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+         А еще я познакомился со своей будущей женой в
+         комментариях к выложенной фотографии!"
+  </p>
+  <div class="slide-title2">Николай Васильев</div>
+  <div class="slide-title-second2">25 лет программист</div>
+    </div>
+  </div>
+ <div class="slide">
+   <div class="slide-text">
+     <div class="slide-title">Кирилл Петров</div>
+     <div class="slide-title-second">29 лет спортсмен</div>
+     <p class="slide-p">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+        А еще я познакомился со своей будущей женой в
+        комментариях к выложенной фотографии!"
+</p>
+<div class="slide-title2">Кирилл Петров</div>
+<div class="slide-title-second2">29 лет спортсмен</div>
+   </div>
+ </div>
+ <div class="slide">
+   <div class="slide-text">
+     <div class="slide-title">Аркадий Иванов</div>
+     <div class="slide-title-second">25 лет бизнесмен</div>
+     <p class="slide-p">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+        А еще я познакомился со своей будущей женой в
+        комментариях к выложенной фотографии!"
+</p>
+<div class="slide-title2">Аркадий Иванов</div>
+<div class="slide-title-second2">25 лет бизнесмен</div>
+   </div>
+ </div>
+</div>
+<div class="slides2" id="slider2">
+  <label class="slider-btn-1-2" for="btn-1"><img src="css/img/review-arrow-left.svg"></label>
+
+ <label class="slider-btn-1-3" for="btn-3"><img src="css/img/review-arrow-right.svg"></label>
+<div class="slide">
+  <div class="slide-text">
+    <div class="slide-title">Николай Васильев</div>
+    <div class="slide-title-second">25 лет программист</div>
+    <p class="slide-p">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+       А еще я познакомился со своей будущей женой в
+       комментариях к выложенной фотографии!"
+</p>
+<div class="slide-title2">Николай Васильев</div>
+<div class="slide-title-second2">25 лет программист</div>
+  </div>
+</div>
+<div class="slide">
+ <div class="slide-text">
+   <div class="slide-title">Кирилл Петров</div>
+   <div class="slide-title-second">29 лет спортсмен</div>
+   <p class="slide-p">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+      А еще я познакомился со своей будущей женой в
+      комментариях к выложенной фотографии!"
+</p>
+<div class="slide-title2">Кирилл Петров</div>
+<div class="slide-title-second2">29 лет спортсмен</div>
+ </div>
+</div>
+<div class="slide">
+ <div class="slide-text">
+   <div class="slide-title">Аркадий Иванов</div>
+   <div class="slide-title-second">25 лет бизнесмен</div>
+   <p class="slide-p">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+      А еще я познакомился со своей будущей женой в
+      комментариях к выложенной фотографии!"
+</p>
+<div class="slide-title2">Аркадий Иванов</div>
+<div class="slide-title-second2">25 лет бизнесмен</div>
+ </div>
+</div>
+</div>
+</div>
    <section class="price slider" id="price">
       <div class="price__price-table slider__price-wrap">
 
@@ -244,6 +313,39 @@
     	<a  class="vlad" href="https://www.instagram.com/vladeee11/"> Vladeee11</a>
     </div>
 </footer>
+<script>
+var Menu=document.querySelector('.menu');
+var btn=document.querySelector('.page-header__button');
+var btncls=document.querySelector('.site-list__link-close');
+ Menu.classList.remove('menu-no-js');
+
+ btn.addEventListener('click',function(){
+ if (Menu.classList.contains('menu-closed')){
+   Menu.classList.remove('menu-closed');
+   Menu.classList.add('menu');
+
+ }else{
+   Menu.classList.add('menu-closed');
+   Menu.classList.remove('menu');
+ }
+
+
+
+});
+btncls.addEventListener('click',function(){
+if (Menu.classList.contains('menu')){
+  Menu.classList.remove('menu');
+  Menu.classList.add('menu-closed');
+
+}else{
+  Menu.classList.add('menu-closed');
+  Menu.classList.remove('menu');
+}
+
+
+
+});
+</script>
 
   </body>
 </html>

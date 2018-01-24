@@ -17,9 +17,20 @@ margin:0 auto;
 min-width: 320px;
 background: url("img/background-mobile@2x.jpg") no-repeat;
 }
-.menu{
+.menu{ width: 100%;
   height: 440px;
+  position: absolute;
+  z-index: 10;
+
+}
+.menu-closed {
   display: none;
+}
+.menu-no-js{width: 100%;
+  height: 440px;
+  position: absolute;
+  z-index: 10;
+  display: block;
 }
 .page-header__wrapper{
 
@@ -60,6 +71,16 @@ background: url("img/background-mobile@2x.jpg") no-repeat;
   margin-top: 28px;
  margin-left: 7%;
 }
+.platforms__download:hover{
+  background: white;
+  color:#d22856;
+}
+.platforms__download:active{
+  background: white;
+  color:#f2cdd4;
+}
+
+
 .page-header__wrapper-border{
   height: 65px;
   display: block;
@@ -148,6 +169,13 @@ padding-top: 93px;
   color: white;
   text-decoration: none;
 }
+.site-list__link:hover{
+  color: #f31b62;
+}
+.site-list__link:active{
+  color: #f31b62;
+  opacity: 0.3;
+}
 .platforms__wrapper{
   width: 320px;
   margin: 0 auto;
@@ -193,6 +221,7 @@ padding-top: 30px;
 .text__wrapper{
   height: auto;
 }
+
 @media @tablet-widths {
   .platforms__wrapper{
     width: 300px;
@@ -202,8 +231,19 @@ padding-top: 30px;
   .platforms{
     background: transparent;
   }
-  .menu{
+  .menu{ width: 100%;
     height: 440px;
+    position: absolute;
+    z-index: 10;
+
+  }.menu-no-js{width: 100%;
+    height: 440px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+  }
+  .menu-closed {
+    display: none;
   }
   .iphone-han{
     margin-bottom: 0;
@@ -334,7 +374,10 @@ margin-top: 140px;
     height: 100px;
 
   }
-
+.main-nav--opened2{
+  display: none;
+  height: 0;
+}
   .main-nav__list{
     min-height: 60px;
     width:100%;
@@ -473,13 +516,36 @@ width: 100%;
       font-size: 18px;
       min-height: 105px;
       float:left;
-      padding-right: 80px;
       color: white;
 
 
-    }.site-list__item-desk{
+    }
+
+    .site-list__link-desk:hover{
+      border-bottom: 2px solid white;
+
+
+    }
+    .site-list__link-desk:active{
+      color:#7f858c;
+      border-bottom: 0px;
+
+
+    }
+
+    .site-list__link-desk-active:hover{
+    color:#842945;
+    border-bottom: 2px solid #842945;
+    }
+    .site-list__link-desk-active:active{
+      color:#7f858c;
+      border-bottom: 0px;
+    }
+
+    .site-list__item-desk{
       min-height: 60px;
       margin: 0 auto;
+      margin-right: 80px;
     float:left;
     }
     .site-list__iteml-desk{
@@ -498,6 +564,7 @@ width: 100%;
   position: absolute;
   z-index: 2;
 }
+
 .platforms__download{
   font-size: 21px;
   line-height: 18px;
@@ -527,5 +594,9 @@ width: 100%;
     }
     .text-title{
       text-align: center;
+    }
+    .menu{
+      height: 0px;
+      display: none;
     }
   }
