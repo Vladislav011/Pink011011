@@ -1,40 +1,174 @@
-.map {
-  position: relative;
+.contact{
+  height: 409px;
   width: 100%;
-  height: 200px;
-  background-image: url("../img/bg-map-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 70%;
-  background-size: cover;
-  border: 0;
-  overflow: hidden;
 
-  @media (min-width: @screen_tablet) {
-    height: 380px;
-    background-image: url("../img/bg-map-tablet.jpg");
-  }
 
-  @media (min-width: @screen_desktop) {
-    height: 525px;
-  }
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
+
+
+  background: white;
+}
+.contact__map-marker{
+  display: none;
+}
+.trg{
+  height: 36px;
+  background-color: white;
+  clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
+}
+
+.contact-title{
+
+  margin: 0 auto;
+  width: 223px;
+    margin-top: 55px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 100;
+}
+.contact-item_first{
+
+  font-weight: 100;
+}
+.contacts--item__second--text,
+.contacts--item__third--text,
+.contact-item__first--text{
+  color: #bd5672;
+}
+.contact-item__first,
+.contact-item__second,
+.contact-item__third{
+  height: 90px;
+  width: 225px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-item__second--title
+.contact-item__third--title,
+.contact-item__first--title{
+  line-height: 30px;
+  font-size: 18px;
+width: 90px;
+margin: 0 auto;
+margin-top: 40px;
+}
+.contact-item__second{
+
+  height: 100px;
+}
+.contact-item__third{
+
+
+  margin-top: 30px;
+}
+.contact__map{
+  position: relative;
+      top: -35px;
+      z-index: -1;
+      height: 250px;
+      width: 100%;
+      background: url(img/bg-map-mobile.jpg) no-repeat;
+      background-position: -150px -420px;
+}
+@media @tablet-widths  {
+  .contact{
+    height: 409px;
     width: 100%;
-    height: 50px;
-    background: url("../img/bg-white-mask.svg") no-repeat center top / 100% 50px;
-    z-index: 5;
 
-    @media (min-width: @screen_tablet) {
-      height: 80px;
-      background-size: 100% 80px;
-    }
 
-    @media (min-width: @screen_desktop) {
-      height: 150px;
-      background-size: 100% 150px;
-    }
+
+
+
+    background: white;
   }
+  .contact-item__first{
+    margin-top: 64px;
+    margin-left: 10%;
+
+    float: left;
+    width: 215px;
+  }
+  .contact-item__second{
+    margin-top: 64px;
+    margin-right:  10%;
+
+
+    width: 215px;
+  }
+  .contact-item__third{
+    margin-top: 64px;
+
+  }
+  .contact-title{
+    height: 80px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contact-item_first{
+
+    font-weight: 100;
+  }
+  .trg{
+    height: 75px;
+    background-color: white;
+    clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
+  }
+  .contact__map{
+    position: relative;
+        top: -75px;
+        z-index: -1;
+        height: 250px;
+        width: 100%;
+        background: url(img/bg-map-tablet.jpg) no-repeat;
+        background-position: -150px -420px;
+  }
+}
+@media @desktop-widths{
+  .contact{
+    height: 370px;}
+    .contact-title{
+      height: 100px;
+      width: 100%;
+      font-size: 30px;
+      line-height: 50px;
+    }
+    .contact-item__first{
+      margin-top: 64px;
+      margin-left: 10%;
+
+      float: left;
+      width: 215px;
+    }
+    .contact-item__second{
+      float: left;
+      margin-top: 64px;
+      margin-left:  14%;
+
+
+      width: 215px;
+    }
+    .contact-item__third{
+      float: left;
+      margin-top: 64px;
+
+    }
+    .contact__map-marker{
+      display: block;
+      position: relative;
+      top:390px;
+      left: 45%;
+    }
+  .contact__map{
+    position: relative;
+        top: -105px;
+        z-index: -1;
+        height: 503px;
+        width: 100%;
+        background: url(img/bg-map-desktop@2x.jpg) no-repeat;
+        background-position: -650px -720px;
+  }
+  .trg{
+    height: 105px;}
 }

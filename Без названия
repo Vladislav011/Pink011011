@@ -1,0 +1,56 @@
+<section class="price-2" id="price">
+   <div class="price__price-table slider__price-wrap">
+
+     <div class="price__item price__options">
+       <ul class="price__content-list">
+         <li class="price__content-item price__options-item">Розовый фильтр</li>
+         <li class="price__content-item price__options-item">Смайлики</li>
+         <li class="price__content-item price__options-item">Комментарии</li>
+       </ul>
+     </div>
+
+<div class="slide4 slide4-none">
+     <div class="price__item slider__price-item">
+       <div class="price__header">
+         <p class="price__title">База</p>
+         <p class="price__cost">1,99 USD</p>
+       </div>
+       <ul class="price__content-list">
+         <li class="price__content-item"><img class="yes" src="css/img/icon-yes.svg"></li>
+         <li class="price__content-item price__content-item--not-included"><img class="no" src="css/img/icon-no.svg"></li>
+         <li class="price__content-item price__content-item--not-included"><img class="no" src="css/img/icon-no.svg"></li>
+       </ul>
+     </div>
+</div>
+<div class="slide5 slide5-none">
+     <div class="price__item price__item--hit slider__price-item">
+
+       <div class="price__header">
+         <p class="price__title">Стандарт</p>
+         <p class="price__cost">3,99 USD</p>
+       </div>
+       <ul class="price__content-list">
+         <li class="price__content-item"><img class="yes" src="css/img/icon-yes.svg"></li>
+         <li class="price__content-item"><img class="yes" src="css/img/icon-yes.svg"></li>
+         <li class="price__content-item price__content-item--not-included"><img class="no" src="css/img/icon-no.svg"></li>
+       </ul>
+     </div>
+</div>
+<div class="slide6 slide6-none">
+     <div class="price__item slider__price-item">
+       <div class="price__header">
+         <p class="price__title">Анлим</p>
+         <p class="price__cost">9,99 USD</p>
+       </div>
+       <ul class="price__content-list">
+         <li class="price__content-item"><img class="yes" src="css/img/icon-yes.svg"></li>
+         <li class="price__content-item"><img class="yes" src="css/img/icon-yes.svg"></li>
+         <li class="price__content-item"><img class="yes" src="css/img/icon-yes.svg"></li>
+       </ul>
+     </div>
+   </div>
+   <img class="hit hit-none" src="css/img/flag_hit.png">
+
+ </div>
+
+ </section>

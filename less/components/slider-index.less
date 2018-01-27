@@ -1,7 +1,7 @@
 .slides{
   width: 87.5%;
   margin: 0 auto;
-
+height: 270px;
   margin-top: 50px;
 }
 .slides2{
@@ -96,22 +96,72 @@ input[type="radio"]{
   line-height: 30px;
   text-align: center;
 }
+@keyframes slideranimation
+{
+
+    0%
+    {
+        transform: translateX(-2000px);
+
+    }
+     70%
+    {
+        transform: translateX(30px);
+
+    }
+     90%
+    {
+        transform: translateX(-5px);
+
+    }
+     100%
+    {
+        transform: translateX(0);
+
+    }
+
+}
+@keyframes slideranimation2
+{
+
+    0%
+    {
+        transform: translateX(2000px);
+
+    }
+     70%
+    {
+        transform: translateX(-30px);
+
+    }
+     90%
+    {
+        transform: translateX(5px);
+
+    }
+     100%
+    {
+        transform: translateX(0);
+
+    }
+
+}
 .slide{
   display: none;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-
+  animation: slideranimation 0.6s;
 display: block;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2){
 display: block;
-
+  animation: slideranimation 0.6s;
 }
 #btn-3:checked ~ .slides .slide:nth-child(3) {
 display: block;
-
+  animation: slideranimation 0.6s;
       }
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
@@ -192,9 +242,46 @@ left:-200%;
 
     display: none;
   }
-  .slide{
+  .slide1-none{
+    display: none;
+
+  }
+  .slide1{
+
+animation: slideranimation2 0.6s;
     display: block;
   }
+  .slide2{
+animation: slideranimation2 0.6s;
+
+    display: block;
+  }
+  .slide3{
+animation: slideranimation2 0.6s;
+    display: block;
+  }
+  
+  .slide3-none{
+    display: none;
+
+  }
+  .slide2-none{
+    display: none;
+
+  }
+.prev{
+  position: relative;
+  top:-145px;
+  width: 30px;
+  left: -172px;
+
+}
+.next{width: 30px;
+  position: relative;
+  top:-193px;
+  left: 829px;
+
+}
   .slides2{
     width: 56.5%;
     margin: 0 auto;
