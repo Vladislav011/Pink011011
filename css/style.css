@@ -16,53 +16,18 @@ body {
   height: auto;
   margin: 0 auto;
   min-width: 320px;
-  background: url("img/background-mobile@2x.jpg") no-repeat;
+  background: url("img/promo-header_bgr-blue-mobile@2x.jpg") 100% 100% no-repeat;
+  background-size: cover;
 }
 .page-header__button {
   outline: none;
 }
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@-moz-keyframes bounce {
-  0% {
-    -moz-transform: translateY(-2000px);
-         transform: translateY(-2000px);
-  }
-  100% {
-    -moz-transform: translateY(0);
-         transform: translateY(0);
-  }
-}
-@-o-keyframes bounce {
-  0% {
-    -o-transform: translateY(-2000px);
-       transform: translateY(-2000px);
-  }
-  100% {
-    -o-transform: translateY(0);
-       transform: translateY(0);
-  }
-}
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-       -moz-transform: translateY(-2000px);
-         -o-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
   100% {
-    -webkit-transform: translateY(0);
-       -moz-transform: translateY(0);
-         -o-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .menu {
@@ -70,10 +35,7 @@ body {
   height: 440px;
   position: absolute;
   z-index: 10;
-  -webkit-animation: bounce 0.6s;
-     -moz-animation: bounce 0.6s;
-       -o-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 .menu-closed {
   display: none;
@@ -285,7 +247,7 @@ body {
   }
   .iphone-han {
     margin-bottom: 0;
-    width: 60%;
+    width: 80%;
     height: 395px;
   }
   .app__image-tablet {
@@ -371,7 +333,7 @@ body {
     margin-top: 140px;
   }
 }
-@media (min-width:768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width:768px) and (-o-min-device-pixel-ratio: 3/2), (min-width:768px) and (min-resolution: 1.5dppx) {
+@media (min-width:768px) and (min-resolution: 1.5dppx) {
   .page-header2 {
     background-image: url("img/background-tablet@2x.jpg") no-repeat;
   }
@@ -383,7 +345,7 @@ body {
   }
   .iphone-han {
     margin-bottom: 0;
-    width: 60%;
+    width: 80%;
     height: 395px;
   }
 }
@@ -394,7 +356,7 @@ body {
   }
   .iphone-han {
     margin-bottom: 0;
-    width: 60%;
+    width: 80%;
     height: 395px;
   }
 }
@@ -427,11 +389,13 @@ body {
   }
   .page-header {
     width: 100%;
-    background: url("img/background-fullsize.jpg");
+    background: url("img/promo-header_bgr-blue-desktop@2x.jpg") 100% 100% no-repeat;
+    background-size: cover;
   }
   .page-header2 {
     width: 100%;
-    background: url("img/background-fullsize.jpg");
+    background: url("img/promo-header_bgr-blue-desktop@2x.jpg") 100% 100% no-repeat;
+    background-size: cover;
   }
   .main-nav {
     width: 100%;
@@ -507,7 +471,7 @@ body {
     width: 550px;
     position: absolute;
     height: 351px;
-    top: 390px;
+    top: 114px;
     left: 49.2%;
   }
   .platforms__text {
@@ -769,16 +733,10 @@ body {
   .footer-discribe:hover {
     background-color: purple;
     box-shadow: 0 0 30px #000000;
-    -webkit-transition: box-shadow 0.6s;
-       -moz-transition: box-shadow 0.6s;
-         -o-transition: box-shadow 0.6s;
-            transition: box-shadow 0.6s;
+    transition: box-shadow 0.6s;
   }
   .footer-discribe:active {
-    -webkit-animation: slideranimation 0.6s;
-       -moz-animation: slideranimation 0.6s;
-         -o-animation: slideranimation 0.6s;
-            animation: slideranimation 0.6s;
+    animation: slideranimation 0.6s;
     background-color: black;
     box-shadow: 0 0 30px #000000;
   }
@@ -834,10 +792,10 @@ img {
 @media (min-width:1200px) {
   .content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
   }
   .content-wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 .offer {
@@ -888,8 +846,7 @@ img {
 }
 .info {
   margin: 0 auto;
-  -webkit-clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
   background: #f2f2f2;
   padding-top: 60px;
 }
@@ -949,8 +906,7 @@ img {
     margin-top: 50px;
     height: 485px;
     padding-top: 0px;
-    -webkit-clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
   }
   .img-4 {
     display: none;
@@ -988,8 +944,7 @@ img {
     width: 100%;
     margin-top: 50px;
     min-height: 560px;
-    -webkit-clip-path: polygon(0 93px, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 93px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 93px, 100% 0, 100% 100%, 0 100%);
   }
   .img-info1 {
     display: block;
@@ -1498,7 +1453,7 @@ img {
   }
   .content-wrapper {
     min-height: 1170px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   .photo-first {
@@ -2340,7 +2295,7 @@ input[type="radio"]:checked + span::after {
   background: #f2f2f2;
   z-index: 10;
 }
-.controls__toggle--contrast1:active {
+.controls__toggle--contrast1:hover {
   background: #d22856;
 }
 @media (min-width:768px) {
@@ -2440,10 +2395,10 @@ input[type="radio"]:checked + span::after {
     background: #f2f2f2;
     z-index: 10;
   }
-  .controls__toggle--crop:active {
+  .controls__toggle--crop:hover {
     background: #d22856;
   }
-  .controls__toggle--fill:active {
+  .controls__toggle--fill:hover {
     background: #d22856;
   }
 }
@@ -2571,189 +2526,48 @@ input[type="radio"] {
   line-height: 30px;
   text-align: center;
 }
-@-webkit-keyframes slideranimation {
-  0% {
-    -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px);
-  }
-  70% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-  90% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@-moz-keyframes slideranimation {
-  0% {
-    -moz-transform: translateX(-2000px);
-         transform: translateX(-2000px);
-  }
-  70% {
-    -moz-transform: translateX(30px);
-         transform: translateX(30px);
-  }
-  90% {
-    -moz-transform: translateX(-5px);
-         transform: translateX(-5px);
-  }
-  100% {
-    -moz-transform: translateX(0);
-         transform: translateX(0);
-  }
-}
-@-o-keyframes slideranimation {
-  0% {
-    -o-transform: translateX(-2000px);
-       transform: translateX(-2000px);
-  }
-  70% {
-    -o-transform: translateX(30px);
-       transform: translateX(30px);
-  }
-  90% {
-    -o-transform: translateX(-5px);
-       transform: translateX(-5px);
-  }
-  100% {
-    -o-transform: translateX(0);
-       transform: translateX(0);
-  }
-}
 @keyframes slideranimation {
   0% {
-    -webkit-transform: translateX(-2000px);
-       -moz-transform: translateX(-2000px);
-         -o-transform: translateX(-2000px);
-            transform: translateX(-2000px);
+    transform: translateX(-2000px);
   }
   70% {
-    -webkit-transform: translateX(30px);
-       -moz-transform: translateX(30px);
-         -o-transform: translateX(30px);
-            transform: translateX(30px);
+    transform: translateX(30px);
   }
   90% {
-    -webkit-transform: translateX(-5px);
-       -moz-transform: translateX(-5px);
-         -o-transform: translateX(-5px);
-            transform: translateX(-5px);
+    transform: translateX(-5px);
   }
   100% {
-    -webkit-transform: translateX(0);
-       -moz-transform: translateX(0);
-         -o-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@-webkit-keyframes slideranimation2 {
-  0% {
-    -webkit-transform: translateX(2000px);
-            transform: translateX(2000px);
-  }
-  70% {
-    -webkit-transform: translateX(-30px);
-            transform: translateX(-30px);
-  }
-  90% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@-moz-keyframes slideranimation2 {
-  0% {
-    -moz-transform: translateX(2000px);
-         transform: translateX(2000px);
-  }
-  70% {
-    -moz-transform: translateX(-30px);
-         transform: translateX(-30px);
-  }
-  90% {
-    -moz-transform: translateX(5px);
-         transform: translateX(5px);
-  }
-  100% {
-    -moz-transform: translateX(0);
-         transform: translateX(0);
-  }
-}
-@-o-keyframes slideranimation2 {
-  0% {
-    -o-transform: translateX(2000px);
-       transform: translateX(2000px);
-  }
-  70% {
-    -o-transform: translateX(-30px);
-       transform: translateX(-30px);
-  }
-  90% {
-    -o-transform: translateX(5px);
-       transform: translateX(5px);
-  }
-  100% {
-    -o-transform: translateX(0);
-       transform: translateX(0);
+    transform: translateX(0);
   }
 }
 @keyframes slideranimation2 {
   0% {
-    -webkit-transform: translateX(2000px);
-       -moz-transform: translateX(2000px);
-         -o-transform: translateX(2000px);
-            transform: translateX(2000px);
+    transform: translateX(2000px);
   }
   70% {
-    -webkit-transform: translateX(-30px);
-       -moz-transform: translateX(-30px);
-         -o-transform: translateX(-30px);
-            transform: translateX(-30px);
+    transform: translateX(-30px);
   }
   90% {
-    -webkit-transform: translateX(5px);
-       -moz-transform: translateX(5px);
-         -o-transform: translateX(5px);
-            transform: translateX(5px);
+    transform: translateX(5px);
   }
   100% {
-    -webkit-transform: translateX(0);
-       -moz-transform: translateX(0);
-         -o-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 .slide {
   display: none;
 }
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-  -webkit-animation: slideranimation 0.6s;
-     -moz-animation: slideranimation 0.6s;
-       -o-animation: slideranimation 0.6s;
-          animation: slideranimation 0.6s;
+  animation: slideranimation 0.6s;
   display: block;
 }
 #btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
-  -webkit-animation: slideranimation 0.6s;
-     -moz-animation: slideranimation 0.6s;
-       -o-animation: slideranimation 0.6s;
-          animation: slideranimation 0.6s;
+  animation: slideranimation 0.6s;
 }
 #btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
-  -webkit-animation: slideranimation 0.6s;
-     -moz-animation: slideranimation 0.6s;
-       -o-animation: slideranimation 0.6s;
-          animation: slideranimation 0.6s;
+  animation: slideranimation 0.6s;
 }
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
@@ -2765,14 +2579,8 @@ input[type="radio"] {
   background: white;
   top: 5px;
   left: 1px;
-  -webkit-transition-property: background-color;
-     -moz-transition-property: background-color;
-       -o-transition-property: background-color;
-          transition-property: background-color;
-  -webkit-transition-duration: 3s;
-     -moz-transition-duration: 3s;
-       -o-transition-duration: 3s;
-          transition-duration: 3s;
+  transition-property: background-color;
+  transition-duration: 3s;
   position: relative;
 }
 @media (min-width:768px) {
@@ -2813,14 +2621,8 @@ input[type="radio"] {
     background: white;
     top: 5px;
     left: 1px;
-    -webkit-transition-property: background-color;
-       -moz-transition-property: background-color;
-         -o-transition-property: background-color;
-            transition-property: background-color;
-    -webkit-transition-duration: 3s;
-       -moz-transition-duration: 3s;
-         -o-transition-duration: 3s;
-            transition-duration: 3s;
+    transition-property: background-color;
+    transition-duration: 3s;
     position: relative;
   }
   .slider-controls {
@@ -2842,24 +2644,15 @@ input[type="radio"] {
     display: none;
   }
   .slide1 {
-    -webkit-animation: slideranimation2 0.6s;
-       -moz-animation: slideranimation2 0.6s;
-         -o-animation: slideranimation2 0.6s;
-            animation: slideranimation2 0.6s;
+    animation: slideranimation2 0.6s;
     display: block;
   }
   .slide2 {
-    -webkit-animation: slideranimation2 0.6s;
-       -moz-animation: slideranimation2 0.6s;
-         -o-animation: slideranimation2 0.6s;
-            animation: slideranimation2 0.6s;
+    animation: slideranimation2 0.6s;
     display: block;
   }
   .slide3 {
-    -webkit-animation: slideranimation2 0.6s;
-       -moz-animation: slideranimation2 0.6s;
-         -o-animation: slideranimation2 0.6s;
-            animation: slideranimation2 0.6s;
+    animation: slideranimation2 0.6s;
     display: block;
   }
   .slide3-none {
@@ -2913,8 +2706,7 @@ input[type="radio"] {
 .price-slider {
   width: 100%;
   margin: 0 auto;
-  -webkit-clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 32px, 100% 0, 100% 100%, 0 100%);
   background: #f2f2f2;
   padding-top: 60px;
   height: 475px;
@@ -2954,17 +2746,11 @@ input[type="radio"] {
   background: #fafafb;
 }
 .slide5 {
-  -webkit-animation: slideranimation 0.6s;
-     -moz-animation: slideranimation 0.6s;
-       -o-animation: slideranimation 0.6s;
-          animation: slideranimation 0.6s;
+  animation: slideranimation 0.6s;
   display: block;
 }
 .slide6 {
-  -webkit-animation: slideranimation 0.6s;
-     -moz-animation: slideranimation 0.6s;
-       -o-animation: slideranimation 0.6s;
-          animation: slideranimation 0.6s;
+  animation: slideranimation 0.6s;
   display: block;
 }
 .slide4-none {
@@ -2977,10 +2763,7 @@ input[type="radio"] {
   display: none;
 }
 .slide4 {
-  -webkit-animation: slideranimation 0.6s;
-     -moz-animation: slideranimation 0.6s;
-       -o-animation: slideranimation 0.6s;
-          animation: slideranimation 0.6s;
+  animation: slideranimation 0.6s;
   display: block;
 }
 .slider-controls-price {
@@ -3007,14 +2790,8 @@ input[type="radio"] {
   background: white;
   top: 5px;
   left: 1px;
-  -webkit-transition-property: background-color;
-     -moz-transition-property: background-color;
-       -o-transition-property: background-color;
-          transition-property: background-color;
-  -webkit-transition-duration: 3s;
-     -moz-transition-duration: 3s;
-       -o-transition-duration: 3s;
-          transition-duration: 3s;
+  transition-property: background-color;
+  transition-duration: 3s;
   position: relative;
 }
 .price__header {
@@ -3062,10 +2839,7 @@ input[type="radio"] {
   margin-right: 20%;
 }
 .hit {
-  -webkit-animation: slideranimation 0.6s;
-     -moz-animation: slideranimation 0.6s;
-       -o-animation: slideranimation 0.6s;
-          animation: slideranimation 0.6s;
+  animation: slideranimation 0.6s;
   position: relative;
   top: -290px;
   left: 6.8%;
@@ -3082,8 +2856,7 @@ input[type="radio"] {
     margin-top: 50px;
     height: 445px;
     padding-top: 0px;
-    -webkit-clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 56px, 100% 0, 100% 100%, 0 100%);
     background: #f2f2f2;
     padding-top: 60px;
     display: block;
@@ -3111,24 +2884,15 @@ input[type="radio"] {
     width: 150px;
   }
   .slide4 {
-    -webkit-animation: none;
-       -moz-animation: none;
-         -o-animation: none;
-            animation: none;
+    animation: none;
     display: block;
   }
   .slide5 {
-    -webkit-animation: none;
-       -moz-animation: none;
-         -o-animation: none;
-            animation: none;
+    animation: none;
     display: block;
   }
   .slide6 {
-    -webkit-animation: none;
-       -moz-animation: none;
-         -o-animation: none;
-            animation: none;
+    animation: none;
     display: block;
   }
   .yes,
@@ -3148,8 +2912,7 @@ input[type="radio"] {
 }
 @media (min-width:1200px) {
   .price2 {
-    -webkit-clip-path: polygon(0 93px, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 93px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 93px, 100% 0, 100% 100%, 0 100%);
   }
   .slider__price-wrap {
     width: 940px;
@@ -3182,8 +2945,7 @@ input[type="radio"] {
 .trg {
   height: 36px;
   background-color: white;
-  -webkit-clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
-          clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
+  clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
 }
 .contact-title {
   margin: 0 auto;
@@ -3265,17 +3027,16 @@ input[type="radio"] {
   .trg {
     height: 75px;
     background-color: white;
-    -webkit-clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
-            clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
+    clip-path: polygon(0% 0, 100% 0, 50% 100%, 50% 100%, 0 0%);
   }
   .contact__map {
     position: relative;
     top: -75px;
     z-index: -1;
-    height: 250px;
+    height: 380px;
     width: 100%;
     background: url(img/bg-map-tablet.jpg) no-repeat;
-    background-position: -150px -420px;
+    background-position: -150px -320px;
   }
 }
 @media (min-width:1200px) {
@@ -3313,11 +3074,11 @@ input[type="radio"] {
   .contact__map {
     position: relative;
     top: -105px;
+    height: 500px;
     z-index: -1;
-    height: 503px;
     width: 100%;
-    background: url(img/bg-map-desktop@2x.jpg) no-repeat;
-    background-position: -650px -720px;
+    background: url(img/contacts__map_bgr-desktop@2x.jpg) no-repeat;
+    background-position: -590px -250px;
   }
   .trg {
     height: 105px;
